@@ -1,0 +1,13 @@
+Description: remove useless shebang
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-12-17
+
+--- a/lib/cli/cli.js
++++ b/lib/cli/cli.js
+@@ -1,5 +1,3 @@
+-#!/usr/bin/env node
+-
+ 'use strict';
+ 
+ /**

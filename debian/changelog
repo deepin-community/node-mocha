@@ -1,5 +1,501 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-mocha (10.2.0+ds1+~cs29.5.1-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Vagrant Cascadian ]
+  * Make build reproducible (build date in various .js files)
+    (Closes: #1035362)
+
+  [ Yadd ]
+  * Declare compliance with policy 4.6.2
+  * New upstream version 10.2.0+ds1+~cs29.5.1
+  * Unfuzz patches
+
+ -- Yadd <yadd@debian.org>  Sat, 12 Aug 2023 11:32:02 +0400
+
+node-mocha (10.1.0+ds1+~cs29.3.1-1) unstable; urgency=medium
+
+  * Drop component ungap-promise-all-settled
+  * New upstream version 10.1.0+ds1+~cs29.3.1
+  * Add fix for node-del >= 7
+  * Build flat commonjs files
+  * Add autopkgtest for yargs-unparser
+
+ -- Yadd <yadd@debian.org>  Tue, 18 Oct 2022 10:03:08 +0200
+
+node-mocha (10.0.0+ds1+~cs28.5.6-2) unstable; urgency=medium
+
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Mon, 27 Jun 2022 09:10:09 +0200
+
+node-mocha (10.0.0+ds1+~cs28.5.6-1) experimental; urgency=medium
+
+  * New upstream version 10.0.0+ds1+~cs28.5.6
+  * Unfuzz patches
+  * Update links: bin/mocha was renamed to bin/mocha.js
+  * Update lintian overrides
+  * Require nodejs:any >= 14
+
+ -- Yadd <yadd@debian.org>  Sun, 26 Jun 2022 11:42:40 +0200
+
+node-mocha (9.2.2+ds1+~cs28.5.6-2) unstable; urgency=medium
+
+  [ Pirate Praveen ]
+  * Drop webpack 4 compat patches and set minimum version of webpack to 5
+  * Bump Standards-Version to 4.6.1 (no changes needed)
+
+  [ Yadd ]
+  * Add missing build dependnecy to node-babel-loader (Closes: #1001554)
+
+ -- Yadd <yadd@debian.org>  Mon, 23 May 2022 17:11:19 +0200
+
+node-mocha (9.2.2+ds1+~cs28.5.6-1) unstable; urgency=medium
+
+  * New upstream version 9.2.2+ds1+~cs28.5.6 (Closes: #1010413)
+  * Patch workerpool to not use webpack 5 option
+
+ -- Jérémy Lal <kapouer@melix.org>  Sun, 01 May 2022 11:20:20 +0200
+
+node-mocha (9.2.2+ds1+~cs28.3.8-1) unstable; urgency=medium
+
+  * New upstream version 9.2.2+ds1+~cs28.3.8
+
+ -- Yadd <yadd@debian.org>  Tue, 15 Mar 2022 15:42:40 +0100
+
+node-mocha (9.2.1+ds1+~cs28.3.8-1) unstable; urgency=medium
+
+  * New upstream version 9.2.1+ds1+~cs28.3.8
+  * Unfuzz patches
+
+ -- Yadd <yadd@debian.org>  Wed, 23 Feb 2022 14:23:26 +0100
+
+node-mocha (9.2.0+ds1+~cs28.3.8-1) unstable; urgency=medium
+
+  * New upstream version 9.2.0+ds1+~cs28.3.8
+  * Unfuzz patches
+  * Update copyright
+  * Replace embedded build module by dependency to node-data-format
+
+ -- Yadd <yadd@debian.org>  Mon, 07 Feb 2022 12:49:11 +0100
+
+node-mocha (9.1.4+ds1+~cs28.2.8-1) unstable; urgency=medium
+
+  * Update nodejs dependency to nodejs:any
+  * Drop component nanoid
+  * New upstream version 9.1.4+ds1+~cs28.2.8, updates:
+    + mocha 9.1.4
+    + log-symbols: 5.1.0
+  * Update lintian overrides
+
+ -- Yadd <yadd@debian.org>  Mon, 17 Jan 2022 08:43:53 +0100
+
+node-mocha (9.1.3+ds1+~cs31.2.38-1) unstable; urgency=medium
+
+  * Fix filenamemangle
+  * New upstream version 9.1.3+ds1+~cs31.2.38
+  * Build commonjs files for log-symbols
+  * Update clean
+
+ -- Yadd <yadd@debian.org>  Sun, 17 Oct 2021 19:23:18 +0200
+
+node-mocha (9.1.2+ds1+~cs30.3.36-1) unstable; urgency=medium
+
+  * Update standards version to 4.6.0, no changes needed.
+  * New upstream version 9.1.2+ds1+~cs30.3.36
+  * Refresh patches
+  * Drop useless dependency version constraints
+
+ -- Yadd <yadd@debian.org>  Tue, 28 Sep 2021 23:09:31 +0200
+
+node-mocha (9.1.0+ds1+~cs30.3.33-2) unstable; urgency=medium
+
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Fri, 27 Aug 2021 16:10:33 +0200
+
+node-mocha (9.1.0+ds1+~cs30.3.33-1) experimental; urgency=medium
+
+  * Replace embedded is-unicode-supported by dependency to
+    node-is-unicode-supported (Closes: #992650)
+  * New upstream version 9.1.0+ds1+~cs30.3.33
+
+ -- Yadd <yadd@debian.org>  Thu, 26 Aug 2021 12:34:15 +0200
+
+node-mocha (9.0.3+ds1+~cs30.4.31-2) unstable; urgency=medium
+
+  * Back to unstable
+
+ -- Yadd <yadd@debian.org>  Sat, 14 Aug 2021 13:20:19 +0200
+
+node-mocha (9.0.3+ds1+~cs30.4.31-1) experimental; urgency=medium
+
+  [ Pirate Praveen ]
+  * Add node-del as build dependency
+
+  [ Yadd ]
+  * Fix GitHub tags regex
+  * Uploaders: replace Leo Iannacone by myself, thanks for your work!
+  * Embed is-unicode-supported
+  * New upstream version 9.0.3+ds1+~cs30.4.31
+
+ -- Yadd <yadd@debian.org>  Sat, 31 Jul 2021 17:34:35 +0200
+
+node-mocha (8.2.1+ds1+~cs29.4.27-3) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 21 Dec 2020 06:33:45 +0100
+
+node-mocha (8.2.1+ds1+~cs29.4.27-2) experimental; urgency=medium
+
+  * Team upload
+  * No more install nanoid (Closes: #977796)
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 21 Dec 2020 05:59:14 +0100
+
+node-mocha (8.2.1+ds1+~cs29.4.27-1) experimental; urgency=medium
+
+  * Team upload
+  * Set branches in gbp.conf
+  * Update components: flat log-symbols nanoid @types/mocha
+                       @ungap/promise-all-settled workerpool yargs-unparser
+  * New upstream version 8.2.1+ds1+~cs29.4.27
+  * Refresh patches
+  * No more build browser files
+  * Build workerpool
+  * Update copyright
+  * Update test with upstream test
+  * Install components in nodejs root directory
+  * Update lintian overrides
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 17 Dec 2020 10:40:13 +0100
+
+node-mocha (7.0.1+ds1+~cs28.9.11-2) experimental; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata (already
+    present in machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Refresh patshes
+  * refresh patches
+  * Declare @types/mocha
+  * Add patch to fix node-environment-flags version
+  * Declare compliance with policy 4.5.1
+  * Add ctype=nodejs to component(s)
+  * Build manpage with help2man
+  * Build with node-rollup-plugin-babel instead of node-rollup-plugin-buble
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 15 Dec 2020 00:15:53 +0100
+
+node-mocha (7.0.1+ds1+~cs28.9.11-1) unstable; urgency=medium
+
+  * Team upload
+  * Embed @types/mocha
+  * New upstream version 7.0.1+ds1+~cs28.9.11
+  * Add dependency to node-strip-json-comments (Closes: #968182)
+  * Bump debhelper compatibility level to 13
+  * Use dh-sequence-nodejs
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Oct 2020 11:39:49 +0200
+
+node-mocha (7.0.1+ds1-2) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+  * Update copyright
+  * Update manpage (Closes: #942116)
+  * Remove useless debian/mocha.dirs
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 13 Feb 2020 20:15:40 +0100
+
+node-mocha (7.0.1+ds1-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream version 7.0.1+ds1
+  * Add dependency to node-chokidar
+  * Don't launch test during build to avoid circular dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 06 Feb 2020 15:32:22 +0100
+
+node-mocha (6.2.0+ds1-5) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable after successful tests
+  * Update lintian overrides
+  * Require node-lodash ≥ 4.17.15+dfsg-2~ to avoid autopkgtest regressions
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 31 Jan 2020 06:30:34 +0100
+
+node-mocha (6.2.0+ds1-4) experimental; urgency=medium
+
+  * Team upload
+  * Add dependency to node-chalk
+  * Build depends on pkg-js-tools ≥ 0.9.19~ to fix component install
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 18 Nov 2019 06:54:44 +0100
+
+node-mocha (6.2.0+ds1-3) experimental; urgency=medium
+
+  * Team upload
+  * Require pkg-js-tools ≥ 0.9.18 to fix yargs-unparser install (fixes debci)
+
+ -- Xavier Guimard <yadd@debian.org>  Fri, 15 Nov 2019 18:20:20 +0100
+
+node-mocha (6.2.0+ds1-2) experimental; urgency=medium
+
+  * Team upload
+  * Update debian/copyright
+  * Declare compliance with policy 4.4.1
+  * Add "Rules-Requires-Root: no"
+  * Add dependency to node-is-buffer (fixes debci)
+
+ -- Xavier Guimard <yadd@debian.org>  Thu, 14 Nov 2019 22:11:59 +0100
+
+node-mocha (6.2.0+ds1-1) experimental; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.4.0
+  * Add debian/gbp.conf
+  * Fix repacksuffix
+  * New upstream version 6.2.0+ds1 (Closes: #939461)
+  * Refresh patches
+  * Update rollup config and use rollup-plugin-ignore (embedded)
+  * Switch build and install to pkg-js-tools
+  * Embed ansi-colors, log-symbols, node-environment-flags, object.assign,
+    object-keys, has-symbols and flat as components
+  * Add node-define-properties in dependencies
+  * Replace oxygen-icon-theme dependency by a simple copy of the 2 images
+    needed (Closes: #935323)
+  * Embed object-keys, has-symbols and flat
+  * Update lintian overrides
+  * Replace test by a simple mocha --help (waiting for "unexpected" package)
+  * Remove jekyll from build dependencies
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 07 Sep 2019 20:18:02 +0200
+
+node-mocha (4.1.0+ds3-5) unstable; urgency=medium
+
+  * Team upload
+  * Add missing link. Fixes debci
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 19 Feb 2019 14:53:04 +0100
+
+node-mocha (4.1.0+ds3-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ Pirate Praveen ]
+  * Switch to rollup from webpack (Closes: #921798)
+
+  [ Xavier Guimard ]
+  * Use debian/clean
+  * Don't publish libjs-mocha for now and modify install (Closes: #917295)
+  * Switch tests to pkg-js-tools
+  * Change homepage to https://mochajs.org
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 18 Feb 2019 21:02:00 +0100
+
+node-mocha (4.1.0+ds3-3) unstable; urgency=medium
+
+  [ Xavier Guimard ]
+  * Update patch to increase more test timeouts. Fix debci.
+  * Hide lintian warning "please use libjs-mocha".
+  * Add upstream/metadata file.
+
+  [ Bastien Roucariès ]
+  * Upload to unstable
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 14 Jan 2019 16:40:56 +0100
+
+node-mocha (4.1.0+ds3-2) unstable; urgency=medium
+
+  * Increase test timeouts, thanks to Xavier Guimard. Fix debci.
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 11 Jan 2019 23:55:29 +0100
+
+node-mocha (4.1.0+ds3-1) unstable; urgency=high
+
+  * Remove sourceless chai. Link to libjs-chai (Closes: #917328)
+  * Add missing link to map file.
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 26 Dec 2018 10:10:34 +0100
+
+node-mocha (4.1.0+ds2-3) unstable; urgency=high
+
+  * Fix libjs-mocha by changing webpack options to be like
+    upstream browserify command line (Closes: #917294)
+  * Create map file for libjs-mocha
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 25 Dec 2018 19:29:45 +0100
+
+node-mocha (4.1.0+ds2-2) unstable; urgency=medium
+
+  * Relax dependency on oxygen-icon-theme for mocha
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 01 Nov 2018 16:29:22 +0100
+
+node-mocha (4.1.0+ds2-1) unstable; urgency=medium
+
+  * Remove Gemfile fix "node-mocha FTBFS: in `require:
+    cannot load such file --
+    bundler (LoadError)", thanks to Helmut Grohne (Closes: #911552).
+  * Bug fix: "Please stop (build-)depending on oxygen-icon-theme", thanks
+    to Marga Manterola (Closes: #908133).
+    Relax dependency on oxygen-icon-theme. This package is still needed
+    due to source lacking for this two icons in node-mocha.
+    Icons are imported from oxygen-icon-theme by upstream
+  * Use git dpm
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 01 Nov 2018 16:06:44 +0100
+
+node-mocha (4.1.0+ds1-2) unstable; urgency=medium
+
+  * Bug fix: "missing-copyright-file /usr/share/doc/mocha/copyright",
+    thanks to Thorsten Glaser (Closes: #900032).
+
+ -- Bastien Roucariès <rouca@debian.org>  Tue, 29 May 2018 15:13:43 +0200
+
+node-mocha (4.1.0+ds1-1) unstable; urgency=medium
+
+  * Build docs
+
+ -- Bastien Roucariès <rouca@debian.org>  Wed, 23 May 2018 13:27:18 +0200
+
+node-mocha (4.1.0+ds-1) unstable; urgency=medium
+
+  * Team upload
+  * Add myself as uploaded
+  * Do repack in order to use local library
+  * New upstream version
+  * Multi-Arch: foreign for libjs-mocha
+
+ -- Bastien Roucariès <rouca@debian.org>  Thu, 17 May 2018 11:02:49 +0200
+
+node-mocha (4.0.1-8) unstable; urgency=medium
+
+  * Be nice with packager provides node-mocha with version.
+
+ -- Bastien Roucariès <rouca@debian.org>  Mon, 14 May 2018 17:45:47 +0200
+
+node-mocha (4.0.1-7) unstable; urgency=medium
+
+  * Fix ci by filtering stderr.
+
+ -- Bastien Roucariès <rouca@debian.org>  Sat, 12 May 2018 10:57:41 +0200
+
+node-mocha (4.0.1-6) unstable; urgency=medium
+
+  * Team upload.
+  * Fix broken depends on node-mkdirp (Closes: #898457)
+
+ -- Andreas Moog <andreas.moog@warperbbs.de>  Fri, 11 May 2018 22:29:49 +0200
+
+node-mocha (4.0.1-5) unstable; urgency=medium
+
+  * Team upload
+  * Fix breakage due to node-diff
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 11 May 2018 16:57:14 +0200
+
+node-mocha (4.0.1-4) unstable; urgency=medium
+
+  * Team upload
+
+  [ Pirate Praveen ]
+  * Install correct readme
+  * Include mocha.js and mocha.min.js in mocha
+
+  [ Bastien Roucariès ]
+  * Bump compat and policy
+  * Bug fix: "manpage contains broken link", thanks to
+    paolo.greppi@libpf.com</a>; (Closes: #876435).
+  * Bug fix: "node-mocha FTBFS with nodejs 6.11.2: test failures", thanks
+    to Adrian Bunk (Closes: #872613). Add missing depends.
+
+ -- Bastien Roucariès <rouca@debian.org>  Fri, 11 May 2018 14:33:53 +0200
+
+node-mocha (4.0.1-3) unstable; urgency=medium
+
+  * Team upload
+  * Fix conflict with mocha.css (remove it from mocha.install)
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 30 Dec 2017 16:57:07 +0530
+
+node-mocha (4.0.1-2) unstable; urgency=medium
+
+  * Fix dependency on node-escape-string-regexp
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 30 Dec 2017 10:42:59 +0100
+
+node-mocha (4.0.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Leo Iannacone ]
+  * Imported Upstream version 2.2.5
+  * Bump Standards-Version 3.9.6
+  * debian/control:
+    - add node-jade as builddep
+    - update homepage - thanks to Chris Lamb (closes: #773662)
+  * Refresh patches
+  * 0003_image_and_css_in_usr_share.patch: rename patch - install
+    read mocha.css from usr/share
+  * debian/copyright:
+    - add entry about escape-string-regex and supports-color
+    - update project urls
+    - bump copyright years
+  * debian/mocha.install:
+    - install mocha.css in usr/share (closes: #785302)
+    - install escape-string-regexp files
+    - install supports-color files
+  * debian/watch: update download url
+  * Add autopkgtest suite
+
+  [ Jérémy Lal ]
+  * Imported Upstream version 2.4.5
+  * Remove support/compile.js copyright
+
+  [ Julien Puydt ]
+  * Bump debian compat to 10.
+  * Bump standards-version to 4.0.0.
+
+  [ Pirate Praveen ]
+  * Switch to webpack from browserify
+  * change section, bump standards
+  * update dependencies
+  * fix fs issue
+  * change test-all to test
+  * add node-browser-stdout to depends
+
+  [ Jérémy Lal ]
+  * Remove old copyright statement
+  * Fix old embedded modules
+  * Build-Depends rimraf, expect.js
+  * Remove old XS-Testsuite field
+  * Run make test-node for autopkgtest
+  * (Build)-Depend node-commander >= 2.11.0
+  * Drop installchangelog override
+  * Update copyright holders
+  * Priority: optional
+  * Secure Vcs uri
+
+ -- Jérémy Lal <kapouer@melix.org>  Sat, 30 Dec 2017 00:53:51 +0100
+
+node-mocha (1.20.1-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Sun, 15 Jun 2014 16:52:48 +0200
+
+node-mocha (1.20.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #747416)
+
+ -- Leo Iannacone <l3on@ubuntu.com>  Sun, 01 Jun 2014 22:09:59 +0200

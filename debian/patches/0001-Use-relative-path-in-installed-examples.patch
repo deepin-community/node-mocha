@@ -1,0 +1,25 @@
+Description: Use relative path in installed examples
+Author: Bastien Roucariès <rouca@debian.org>
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2019-09-06
+
+--- a/docs/example/tests.html
++++ b/docs/example/tests.html
+@@ -3,13 +3,13 @@
+   <head>
+     <meta charset="utf-8">
+     <title>Mocha</title>
+-    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css">
++    <link rel="stylesheet" href="../../../javascript/mocha/mocha.min.css">
+     <link rel="shortcut icon" href="../favicon.ico">
+   </head>
+   <body>
+     <div id="mocha"></div>
+-    <script src="https://unpkg.com/mocha/mocha.js"></script>
+-    <script src="https://unpkg.com/chai/chai.js"></script>
++    <script src="../../../javascript/mocha/mocha.min.js"></script>
++    <script src="../../../javascript/chai/chai.min.js"></script>
+     <script>mocha.setup('bdd')</script>
+     <script>expect = chai.expect</script>
+     <script src="Array.js"></script>

@@ -1,0 +1,11 @@
+Document: libjs-mocha
+Title: Mocha
+Author: JS Foundation and contributors
+Abstract: Mocha is a JavaScript test framework for Node.js programs,
+ featuring browser support, asynchronous testing, test coverage reports,
+ and use of any assertion library.
+Section: Programming/javascript
+
+Format: HTML
+Index: /usr/share/doc/libjs-mocha/index.html
+Files: /usr/share/doc/libjs-mocha/index.html

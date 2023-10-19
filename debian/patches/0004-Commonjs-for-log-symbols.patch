@@ -1,0 +1,25 @@
+Description: declare commonjs files
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2021-10-17
+
+--- a/log-symbols/package.json
++++ b/log-symbols/package.json
+@@ -12,7 +12,8 @@
+ 	},
+ 	"type": "module",
+ 	"exports": {
+-		"node": "./index.js",
++		"import": "./index.js",
++		"require": "./index.cjs",
+ 		"default": "./browser.js"
+ 	},
+ 	"engines": {
+@@ -22,6 +23,7 @@
+ 		"test": "xo && ava && tsd"
+ 	},
+ 	"files": [
++		"index.cjs",
+ 		"index.js",
+ 		"index.d.ts",
+ 		"browser.js"

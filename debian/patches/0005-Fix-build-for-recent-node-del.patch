@@ -1,0 +1,16 @@
+Description: fix for node-del >= 7
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-10-18
+
+--- a/workerpool/gulpfile.js
++++ b/workerpool/gulpfile.js
+@@ -5,7 +5,7 @@
+ var uglify = require('uglify-js');
+ var log = require('fancy-log');
+ var format = require('date-format');
+-var del = require('del');
++var del = require('del').deleteAsync;
+ 
+ var bundleFileName = 'workerpool.js'
+ var minifiedFileName = 'workerpool.min.js'

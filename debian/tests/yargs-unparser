@@ -1,0 +1,4 @@
+#!/bin/sh
+
+cd yargs-unparser
+jest --env node

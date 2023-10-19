@@ -1,0 +1,2 @@
+mocha/bin/mocha.js /usr/bin/mocha
+mocha/bin/_mocha /usr/bin/_mocha

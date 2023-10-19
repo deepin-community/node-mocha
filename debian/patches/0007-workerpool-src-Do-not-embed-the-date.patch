@@ -1,0 +1,25 @@
+Description: workerpool/src/*.js: Do not embed the date.
+Author: Vagrant Cascadian <vagrant@reproducible-builds.org>
+Forwarded: not-needed
+Last-Update: 2023-05-01
+
+--- a/workerpool/gulpfile.js
++++ b/workerpool/gulpfile.js
+@@ -16,7 +16,6 @@
+   var version = require('./package.json').version;  // module version
+ 
+   return String(fs.readFileSync('./src/header.js'))
+-      .replace('@@date', today)
+       .replace('@@version', version);
+ }
+ 
+--- a/workerpool/src/header.js
++++ b/workerpool/src/header.js
+@@ -5,7 +5,6 @@
+  * Offload tasks to a pool of workers on node.js and in the browser.
+  *
+  * @version @@version
+- * @date    @@date
+  *
+  * @license
+  * Copyright (C) 2014-2022 Jos de Jong <wjosdejong@gmail.com>

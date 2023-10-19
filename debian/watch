@@ -1,0 +1,36 @@
+version=4
+opts="repacksuffix=+ds1, \
+dversionmangle=s/\+(?:dfsg|ds)\d*$//, \
+filenamemangle=s%(?:.*?)?v?(\d[\d.]*)\.tar\.gz%@PACKAGE@-$1.tar.gz%" \
+ https://github.com/mochajs/mocha/tags (?:.*?/)?v?(\d[\d.]*)\.tar\.gz group
+
+opts=\
+component=flat,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-flat-$1/ \
+ https://github.com/hughsk/flat/tags .*/archive/.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=log-symbols,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-log-symbols-$1/ \
+ https://github.com/sindresorhus/log-symbols/tags .*/archive/.*/v?([\d\.]+).tar.gz checksum
+
+opts="searchmode=plain,component=types-mocha,ctype=nodejs,pgpmode=none" \
+ https://registry.npmjs.org/@types/mocha https://registry.npmjs.org/@types/mocha/-/mocha-([\d\.]+)@ARCHIVE_EXT@ checksum
+
+opts=\
+component=workerpool,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-workerpool-$1/ \
+ https://github.com/josdejong/workerpool/tags .*/archive/.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=yargs-unparser,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-yargs-unparser-$1/ \
+ https://github.com/yargs/yargs-unparser/tags .*/archive/.*/v?([\d\.]+).tar.gz checksum

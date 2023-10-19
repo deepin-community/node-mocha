@@ -1,0 +1,7 @@
+0001-Use-relative-path-in-installed-examples.patch
+0002-Use-full-path-in-examples.patch
+0003-Remove-useless-shebang.patch
+0004-Commonjs-for-log-symbols.patch
+0005-Fix-build-for-recent-node-del.patch
+0006-Update-to-flat-6.patch
+0007-workerpool-src-Do-not-embed-the-date.patch
