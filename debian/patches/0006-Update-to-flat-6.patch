@@ -1,0 +1,15 @@
+Description: update to flat 6
+Author: Yadd <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2022-10-18
+
+--- a/yargs-unparser/index.js
++++ b/yargs-unparser/index.js
+@@ -1,6 +1,6 @@
+ 'use strict';
+ 
+-const flatten = require('flat');
++const {flatten} = require('flat');
+ const camelcase = require('camelcase');
+ const decamelize = require('decamelize');
+ const isPlainObj = require('is-plain-obj');

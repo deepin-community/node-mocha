@@ -1,0 +1,3 @@
+Tests: yargs-unparser
+Depends: @, jest, node-minimist
+Restrictions: allow-stderr

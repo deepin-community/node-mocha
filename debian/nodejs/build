@@ -1,0 +1,6 @@
+mkdir -p images
+cp /usr/share/icons/oxygen/base/22x22/actions/dialog-ok-apply.png images/ok.png
+cp /usr/share/icons/oxygen/base/22x22/actions/dialog-cancel.png images/error.png
+chmod +x ./bin/mocha.js
+help2man -n 'simple, flexible, fun test framework' --no-info ./bin/mocha.js > mocha.1
+perl -i -pe 's/(mocha)\.js/$1/ig' mocha.1

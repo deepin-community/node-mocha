@@ -1,0 +1,7 @@
+mocha.1
+images/
+docs/_site/
+docs/example/chai.js
+log-symbols/index.cjs
+workerpool/dist/
+workerpool/src/generated/embeddedWorker.js

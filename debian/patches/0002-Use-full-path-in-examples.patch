@@ -1,0 +1,25 @@
+Description: Use full path in examples
+Author: Bastien Roucariès <rouca@debian.org>
+Forwarded: not-needed
+Reviewed-By: Xavier Guimard <yadd@debian.org>
+Last-Update: 2019-09-06
+
+--- a/docs/index.md
++++ b/docs/index.md
+@@ -2100,13 +2100,13 @@
+     <meta charset="utf-8" />
+     <title>Mocha Tests</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-    <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
++    <link rel="stylesheet" href="/javascript/mocha/mocha.css" />
+   </head>
+   <body>
+     <div id="mocha"></div>
+ 
+-    <script src="https://unpkg.com/chai/chai.js"></script>
+-    <script src="https://unpkg.com/mocha/mocha.js"></script>
++    <script src="/javascript/chai/chai.js"></script>
++    <script src="/javascript/mocha/mocha.js"></script>
+ 
+     <script class="mocha-init">
+       mocha.setup('bdd');

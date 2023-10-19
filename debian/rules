@@ -1,4 +1,17 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
 
 %:
 	dh $@
+
+override_dh_auto_test:
+	# No test during build to avoid circular dependencies
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod +x debian/mocha/usr/share/nodejs/flat/cli.js \
+		debian/mocha/usr/share/nodejs/mocha/bin/*
+	chmod -x debian/mocha/usr/share/nodejs/@types/mocha/*
