@@ -7,6 +7,10 @@
 %:
 	dh $@
 
+override_dh_auto_configure:
+	mkdir -p workerpool/src/generated
+	dh_auto_configure --buildsystem=nodejs
+
 override_dh_auto_test:
 	# No test during build to avoid circular dependencies
 
