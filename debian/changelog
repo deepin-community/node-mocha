@@ -1,3 +1,9 @@
+node-mocha (10.2.0+ds1+~cs29.5.1-1deepin1) unstable; urgency=medium
+
+  * override dh_auto_configure, create missing workerpool/src/generated.
+
+ -- Tianyu Chen <sweetyfish@deepin.org>  Thu, 19 Oct 2023 11:27:29 +0800
+
 node-mocha (10.2.0+ds1+~cs29.5.1-1) unstable; urgency=medium
 
   * Team upload
